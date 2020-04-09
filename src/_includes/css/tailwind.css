@@ -3,3 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 /* purgecss end ignore */
+
+html {
+    @apply bg-green-400 h-full;
+}
+
+body {
+    @apply bg-white mt-2 h-full;
+}
