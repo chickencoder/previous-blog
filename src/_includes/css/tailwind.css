@@ -1,13 +1,43 @@
+@import url('https://rsms.me/inter/inter.css');
+
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* purgecss end ignore */
 
-html {
-    @apply bg-green-400 h-full;
+.fish {
+  @apply inline-flex items-center justify-center bg-sea w-10 h-10 text-2xl pt-1;
 }
 
-body {
-    @apply bg-white mt-2 h-full;
+.container {
+  @apply max-w-2xl;
+}
+
+h2,
+h3 {
+  @apply mb-4;
+}
+
+p,
+ul,
+ol {
+  @apply leading-loose mb-4;
+}
+
+.nav-item {
+  @apply text-fish font-bold px-3 py-2 mr-2;
+}
+
+.nav-item:hover {
+  @apply bg-gray-200;
+}
+
+.nav-item:focus,
+.nav-item:active {
+  @apply bg-fish text-white;
+}
+
+.nav-item:last-of-type {
+  @apply mr-0;
 }
