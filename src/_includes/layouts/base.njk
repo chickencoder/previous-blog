@@ -1,43 +1,46 @@
---- 
+---
 title: Jesse Sibley
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet">
-    <title>{{ title }}</title>
-  </head>
-  <body class="antialiased font-body text-gray-900">
-    <header class="container mx-auto px-4 my-8 mb-12 flex items-center justify-between">
-      <a href="/">
-        <span class="fish" role="img" title="Matthew 4:19" aria-label="fish">🐟</span>
-      </a>
-      <nav>
-        <ul class="flex mb-0">
-          <li>
-            <a href="/articles" class="nav-item">articles</a>
-          </li>
-          <li>
-            <a class="nav-item" target="_blank" href="https://github.com/chickencoder">github</a>
-          </li>
-          <li>
-            <a class="nav-item" target="_blank" href="https://twitter.com/jessethesibley">twitter</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container mx-auto px-4">
-      {{ content | safe }}
-    </main>
-    <footer class="container mx-auto px-4 mt-8 text-gray-600 text-sm">
-      <ul class="flex items-center">
-        <li class="mr-8 hover:text-gray-900"><a href="/rss">RSS</a></li>
-        <li class="mr-8 hover:text-gray-900"><a href="/sitemap.xml">Sitemap</a></li>
-        <li class="hover:text-gray-900"><a target="_blank" href="https://github.com/chickencoder/blog">View Source</li>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/styles.css" rel="stylesheet">
+  <title>{{ title }}</title>
+</head>
+
+<body class="antialiased font-body text-gray-900">
+  <header class="container mx-auto px-4 my-8 mb-12 flex items-center justify-between">
+    <a href="/">
+      <span class="fish" role="img" title="Matthew 4:19" aria-label="fish">🐟</span>
+    </a>
+    <nav>
+      <ul class="flex mb-0">
+        <li>
+          <a href="/articles" class="nav-item">articles</a>
+        </li>
+        <li>
+          <a class="nav-item" target="_blank" href="https://github.com/chickencoder">github</a>
+        </li>
+        <li>
+          <a class="nav-item" target="_blank" href="https://twitter.com/jessethesibley">twitter</a>
+        </li>
       </ul>
-    </footer>
-  </body>
+    </nav>
+  </header>
+  <main class="container mx-auto px-4">
+    {{ content | safe }}
+  </main>
+  <footer class="hidden container mx-auto p-4 border-t border-gray-100 my-8 text-gray-600 text-sm">
+    <ul class="flex items-center">
+      <li class="mr-8 hover:text-gray-900"><a href="/rss">RSS</a></li>
+      <li class="mr-8 hover:text-gray-900"><a href="/sitemap.xml">Sitemap</a></li>
+      <li class="hover:text-gray-900"><a target="_blank" href="https://github.com/chickencoder/blog">View Source</li>
+    </ul>
+  </footer>
+</body>
+
 </html>

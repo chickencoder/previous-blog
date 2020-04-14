@@ -1,4 +1,5 @@
-@import url('https://rsms.me/inter/inter.css');
+@import './typography.css';
+@import './articles.css';
 
 /* purgecss start ignore */
 @tailwind base;
@@ -6,23 +7,8 @@
 @tailwind utilities;
 /* purgecss end ignore */
 
-.fish {
-  @apply inline-flex items-center justify-center bg-sea w-10 h-10 text-2xl pt-1;
-}
-
 .container {
   @apply max-w-2xl;
-}
-
-h2,
-h3 {
-  @apply mb-4;
-}
-
-p,
-ul,
-ol {
-  @apply leading-loose mb-4;
 }
 
 .nav-item {

@@ -1,0 +1,14 @@
+---
+layout: layouts/base
+---
+
+<header class="mb-8">
+  <h2 class="title">
+    {{ title }}
+  </h2>
+  <p class="text-gray-700 text-sm">Published <time time="">{{ date | dateformat }}</time></p>
+</header>
+
+<article class="markdown">
+  {{ content | safe }}
+</article>
