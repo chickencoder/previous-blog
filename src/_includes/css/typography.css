@@ -1,7 +1,7 @@
 @import url('https://rsms.me/inter/inter.css');
 
 .fish {
-  @apply inline-flex items-center justify-center bg-sea w-10 h-10 text-2xl pt-1;
+  @apply inline-flex items-center justify-center bg-sea-500 w-10 h-10 text-2xl pt-1;
 }
 
 .title {
@@ -18,11 +18,11 @@
   }
 
   a {
-    @apply border-b-2 border-sea;
+    @apply border-b-2 border-fish-500 bg-fish-100;
   }
 
   a:hover {
-    @apply bg-sea;
+    @apply bg-sea-100;
   }
 
   h3 {

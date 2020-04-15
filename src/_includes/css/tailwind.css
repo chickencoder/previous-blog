@@ -12,7 +12,7 @@
 }
 
 .nav-item {
-  @apply text-fish font-bold px-3 py-2 mr-2;
+  @apply text-fish-500 font-bold px-3 py-2 mr-2;
 }
 
 .nav-item:hover {
@@ -21,7 +21,7 @@
 
 .nav-item:focus,
 .nav-item:active {
-  @apply bg-fish text-white;
+  @apply bg-fish-500 text-white;
 }
 
 .nav-item:last-of-type {
