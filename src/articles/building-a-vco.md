@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-tags: electronics
+tags: article
 title: Let's Build a VCO module
 date: 2020-04-14
 ---

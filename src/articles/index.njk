@@ -2,24 +2,40 @@
 layout: layouts/base
 ---
 
-<h2 class="heading mb-8">Articles</h2>
+<h2 class="heading text-3xl mb-2">Articles</h2>
 
-<article class="article-category-card">
-  <h3 class="article-category-heading">SELECT * FROM articles;</h3>
-	<p>Read everything I've written...</p>
-</article>
+<p class="mb-8">I like to write about a few different topics. Take your pick below...</p>
 
-<article class="article-category-card">
-	<h3 class="article-category-heading">Software</h3>
-	<p></p>
-</article>
+<nav>
+	<a href="/articles/all" class="flex mb-4">
+		<div class="bg-pink-400 flex-shrink-0 flex flex-col items-center justify-center p-1 w-32 min-h-full">
+			<span class="text-5xl">🌍</span>
+		</div>
+		<div class="bg-gray-200 p-4 py-6 w-full">
+			<h3 class="text-2xl font-semibold mb-1">Everything</h3>
+			<p>Tutorials, guides, opinions &amp; best practises for developing software. Topics include React, Typescript,
+				Node.</p>
+		</div>
+	</a>
 
-<article class="article-category-card">
-	<h3 class="article-category-heading">Electronics</h3>
-	<p>Read about building circuits &amp; simple electronics theory.</p>
-</article>
+	<a href="/articles/programming" class="flex mb-4">
+		<div class="bg-yellow-400 flex-shrink-0 flex flex-col items-center justify-center p-1 w-32 min-h-full">
+			<span class="text-5xl">💻</span>
+		</div>
+		<div class="bg-gray-200 p-4 py-6 w-full">
+			<h3 class="text-2xl font-semibold mb-1">Programming</h3>
+			<p>Tutorials, guides, opinions &amp; best practises for developing software. Topics include React, Typescript,
+			</p>
+		</div>
+	</a>
 
-<article class="article-category-card">
-	<h3 class="article-category-heading">Misc.</h3>
-</article>
-
+	<a href="/articles/electronics" class="flex mb-8">
+		<div class="bg-purple-400 flex-shrink-0 flex flex-col items-center justify-center p-1 w-32 min-h-full">
+			<span class="text-5xl">⚡️</span>
+		</div>
+		<div class="bg-gray-200 p-4 py-6 w-full">
+			<h3 class="text-2xl font-semibold mb-1">Electronics</h3>
+			<p>Tutorials, guides, opinions &amp; best practises for developing software. Topics include React,</p>
+		</div>
+	</a>
+</nav>
