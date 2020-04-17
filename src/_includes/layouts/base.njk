@@ -36,11 +36,20 @@ title: Jesse Sibley
   <main class="container mx-auto px-4">
     {{ content | safe }}
   </main>
-  <footer class="container mx-auto px-4 my-8 text-gray-600 text-sm">
-    <ul class="flex items-center text-right">
-      <li class="mr-8 hover:text-gray-900"><a href="/rss">RSS</a></li>
-      <li class="mr-8 hover:text-gray-900"><a href="/sitemap.xml">Sitemap</a></li>
-      <li class="hover:text-gray-900"><a target="_blank" href="https://github.com/chickencoder/blog">View Source</li>
+  <footer class="container mx-auto px-4 my-12 text-gray-600 text-sm flex justify-between">
+    <div>
+      &copy; Copyright 2020
+    </div>
+    <ul class="flex items-center content-end">
+      <li class="mr-8 hover:text-gray-900">
+        <a href="/rss">RSS</a>
+      </li>
+      <li class="mr-8 hover:text-gray-900">
+        <a href="/sitemap.xml">Sitemap</a>
+      </li>
+      <li class="hover:text-gray-900">
+        <a target="_blank" href="https://github.com/chickencoder/blog">View Source</a>
+      </li>
     </ul>
   </footer>
 </body>
