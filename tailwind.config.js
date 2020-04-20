@@ -1,6 +1,15 @@
 module.exports = {
+  variants: {
+    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd', 'hover', 'active'],
+    borderColor: ['dark', 'dark-focus', 'dark-focus-within', 'hover', 'active'],
+    textColor: ['dark', 'dark-hover', 'dark-active', 'dark-placeholder', 'hover', 'active'],
+    display: ['dark']
+  },
   theme: {
     extend: {
+      screens: {
+        'xs': '384px'
+      },
       fontFamily: {
         body: ['Inter', 'system-ui', 'sans-serif']
       },
@@ -29,5 +38,8 @@ module.exports = {
         },
       }
     }
-  }
+  },
+  plugins: [
+    require('tailwindcss-dark-mode')(),
+  ]
 }

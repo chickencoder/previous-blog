@@ -5,53 +5,74 @@ title: Jesse Sibley
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/css/styles.css" rel="stylesheet">
-  <link rel="webmention" href="https://webmention.io/jessesibley.com/webmention">
-  <link rel="pingback" href="https://webmention.io/jessesibley.com/xmlrpc">
-  <title>{{ title }}</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="{{ title }}">
+    <title>{{ title }}</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="webmention" href="https://webmention.io/jessesibley.com/webmention">
+    <link rel="pingback" href="https://webmention.io/jessesibley.com/xmlrpc">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml"/>
+  </head>
 
-<body class="antialiased font-body text-gray-900">
-  <header class="container mx-auto px-4 my-8 mb-12 flex items-center justify-between">
-    <a href="/">
-      <span class="fish" role="img" title="Matthew 4:19" aria-label="fish">🐟</span>
-    </a>
-    <nav>
-      <ul class="flex mb-0">
-        <li>
-          <a href="/articles" class="nav-item">articles</a>
+  <body class="antialiased font-body bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+    <header class="container mx-auto px-4 my-8 mb-12 flex items-center justify-between">
+      <a href="/#fish" title="Matthew 4:19">
+        <span class="fish" role="img" aria-label="fish">🐟</span>
+      </a>
+      <nav>
+        <ul class="flex mb-0">
+          <li>
+            <a href="/uses" class="nav-item">about</a>
+          </li>
+          <li>
+            <a class="nav-item" target="_blank" href="https://github.com/chickencoder" rel="me">github</a>
+          </li>
+          <li>
+            <a class="nav-item" target="_blank" href="https://twitter.com/jessethesibley" rel="me">twitter</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container mx-auto px-4">
+      {{ content | safe }}
+    </main>
+    <footer class="container mx-auto px-4 my-12 text-gray-600 dark:text-sea-600 text-sm flex flex-col sm:flex-row justify-between">
+      <div class="mb-4 sm:mb-0">
+        <p class="text-grey-900 dark:text-yellow-300">
+          <a href="mailto:hey@jessesibley.com">hey@jessesibley.com</a>
+        </p>
+      </div>
+      <ul class="flex flex-col sm:flex-row sm:items-center">
+        <li class="hover:text-gray-900 dark-hover:text-sea-500 mb-4 sm:mb-0">
+          <a target="_blank" href="https://github.com/chickencoder/blog">View Source</a>
         </li>
-        <li>
-          <a class="nav-item" target="_blank" href="https://github.com/chickencoder" rel="me">github</a>
-        </li>
-        <li>
-          <a class="nav-item" target="_blank" href="https://twitter.com/jessethesibley" rel="me">twitter</a>
+        <li class="sm:ml-8 hover:text-gray-900 dark-hover:text-sea-500">
+          <a href="/feed.xml">RSS Feed</a>
         </li>
       </ul>
-    </nav>
-  </header>
-  <main class="container mx-auto px-4">
-    {{ content | safe }}
-  </main>
-  <footer class="container mx-auto px-4 my-12 text-gray-600 text-sm flex justify-between">
-    <div>
-      &copy; Copyright 2020
-    </div>
-    <ul class="flex items-center content-end">
-      <li class="mr-8 hover:text-gray-900">
-        <a href="/rss">RSS</a>
-      </li>
-      <li class="mr-8 hover:text-gray-900">
-        <a href="/sitemap.xml">Sitemap</a>
-      </li>
-      <li class="hover:text-gray-900">
-        <a target="_blank" href="https://github.com/chickencoder/blog">View Source</a>
-      </li>
-    </ul>
-  </footer>
-</body>
+    </footer>
+  </body>
+
+  <script>
+    function checkDarkMode() {
+      return window.matchMedia && window
+        .matchMedia('(prefers-color-scheme: dark)')
+        .matches
+    }
+
+    if (checkDarkMode()) {
+      document
+        .documentElement
+        .classList
+        .add('mode-dark');
+    } else {
+      document
+        .documentElement
+        .classList
+        .remove('mode-dark');
+    }
+  </script>
 
 </html>

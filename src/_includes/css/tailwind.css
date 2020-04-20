@@ -18,11 +18,20 @@
   @apply bg-gray-200;
 }
 
-.nav-item:focus,
 .nav-item:active {
   @apply bg-fish-500 text-white;
 }
 
 .nav-item:last-of-type {
   @apply mr-0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-item {
+    @apply text-sea-500;
+  }
+
+  .nav-item:hover {
+    @apply bg-gray-800;
+  }
 }

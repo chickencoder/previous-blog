@@ -33,6 +33,8 @@
     "tailwindcss": "^1.2.0"
   },
   "dependencies": {
-    "moment": "^2.24.0"
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "moment": "^2.24.0",
+    "tailwindcss-dark-mode": "^1.1.4"
   }
 }

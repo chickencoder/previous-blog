@@ -5,7 +5,7 @@
 }
 
 .title {
-  @apply text-4xl font-black;
+  @apply text-4xl font-black mb-2;
 }
 
 .heading {
@@ -18,11 +18,11 @@
   }
 
   a {
-    @apply border-b-2 border-fish-500 bg-fish-100;
+    @apply text-fish-500 font-bold;
   }
 
   a:hover {
-    @apply bg-sea-100;
+    @apply border-b border-fish-200;
   }
 
   h3 {
@@ -41,5 +41,29 @@
 
   ol {
     @apply list-decimal list-inside;
+  }
+
+  code {
+    @apply p-1 bg-sea-500 text-gray-900 rounded leading-none text-sm;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .fish {
+    @apply bg-yellow-400;
+  }
+
+  .markdown {
+    a {
+      @apply text-sea-500;
+    }
+
+    a:hover {
+      @apply border-b border-sea-800;
+    }
+
+    code {
+      @apply bg-sea-500 text-gray-900;
+    }
   }
 }

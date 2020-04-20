@@ -4,27 +4,26 @@ layout: layouts/base
 
 <section class="markdown mb-8">
   <h2 class="heading">About Me</h2>
-
   <p>
     I am a web developer based in Devon, UK. I enjoy building things with React, TypeScript &amp; Node.
   </p>
-
   <p>
     I love <b>exploring</b> new ideas &amp; <b>building</b> things. If I'm not working on a software project, I'm most
-    likely fiddeling with electronics and building homemade synth-instruments.
+    likely fiddeling with electronics and building synthesisers.
   </p>
 </section>
 
 <section class="mb-8">
-  <h2 class="heading mb-4">Recent Articles</h2>
+  <h2 class="heading mb-4">Posts</h2>
+
   <ul class="list-none mb-4">
-    {%- for article in collections.article -%}
-    <li class="mb-2">
-      <a href="/articles" class="flex">
-        <time class="text-gray-700 flex-shrink-0">{{ article.data.date | dateformat }}</time>
-        <h3 class="font-semibold mb-2 ml-4">{{ article.data.title }}</h3>
-      </a>
-    </li>
+    {%- for article in collections.post | reverse -%}
+      <li class="mb-4 xs:mb-2">
+        <a href="{{ article.url }}" class="flex flex-col xs:flex-row">
+          <time class="text-gray-700 dark:text-sea-500 flex-shrink-0" style="width: 112px">{{ article.data.date | dateformat }}</time>
+          <h3 class="font-semibold mb-2 xs:ml-4">{{ article.data.title }}</h3>
+        </a>
+      </li>
     {%- endfor -%}
   </ul>
 </section>
