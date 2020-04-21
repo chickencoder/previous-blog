@@ -23,7 +23,7 @@ The other way to create a new gatsby project is to start from scratch. Gatsby's 
 
 No doubt in a larger project, Gatsby would shine.
 
-I'm also excited to be hearing about [Gatsby Recipes](https://www.gatsbyjs.org/docs/recipes/), which _may_ solve my configuration phobia.
+I'm also excited to be hearing about [Gatsby Recipes](https://twitter.com/gatsbyjs/status/1250852268469096450?s=20), which _may_ solve my configuration phobia.
 
 ## Next is Neat
 
