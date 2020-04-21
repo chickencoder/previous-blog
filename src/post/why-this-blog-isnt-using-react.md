@@ -36,6 +36,12 @@ In Next's recent 9.3 release, it was announced that Next would have new capabili
 
 Long story short, I tried and got fed up. Next is brilliant at keeping things simple. However, this meant that if I wanted to perhaps index my blog posts, so that I can list them out on my homepage, I would have to write some code to scan through the filesystem looking for the right kinds of files. I couldn't be bothered. Because of Next's serverless focus, reading the filesystem becomes unnecessarily treacherous.
 
+## The Stars Align (almost)
+
+At this point I began to start wondering if building my own thing would actually give me the control and simplicity I was craving. I decided to start building a small static site generator that utilised React for templating &amp; logic but only spat out pure HTML with no client-side hydration. Thus, [Starry](https://github.com/chickencoder/starry) was born.
+
+However, this post isn't actually about Starry because after a week or two developing it, I felt like it still wasn't ideal. Besides, maintaining an open source project isn't something I have time for right now.
+
 ## Conclusion
 
 At this stage I realised that I was trying to use React for all the wrong reasons.
