@@ -23,18 +23,20 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@fullhuman/postcss-purgecss": "^2.1.2",
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
+    "moment": "^2.24.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "tailwindcss-dark-mode": "^1.1.4"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "moment": "^2.24.0",
-    "tailwindcss-dark-mode": "^1.1.4"
+    "prism-material-themes": "^1.0.4"
   }
 }

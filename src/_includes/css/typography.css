@@ -13,6 +13,10 @@
 }
 
 .markdown {
+  h1 {
+    @apply text-4xl font-black mb-4;
+  }
+
   h2 {
     @apply text-2xl font-bold mb-4 mt-8;
   }
@@ -43,8 +47,21 @@
     @apply list-decimal list-inside;
   }
 
-  code {
+  code:not(.language-html) {
     @apply p-1 bg-sea-500 text-gray-900 rounded leading-none text-sm;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    @apply font-mono;
+  }
+
+  pre[class*="language-"] {
+    @apply p-4 font-sm;
+  }
+
+  blockquote {
+    @apply px-2 bg-sea-100 border-l-4 border-sea-500;
   }
 }
 
