@@ -57,7 +57,7 @@
   }
 
   pre[class*="language-"] {
-    @apply p-4 font-sm;
+    @apply p-4 text-sm;
   }
 
   blockquote {
